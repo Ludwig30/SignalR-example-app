@@ -13,35 +13,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BlazorAppSignalR
 build_property.RootNamespace = BlazorAppSignalR
-build_property.ProjectDir = C:\Users\ludwi\source\repos\SignalRApp\BlazorAppSignalR\
+build_property.ProjectDir = C:\Users\lgde\source\repos\SignalR-example-app-2\BlazorAppSignalR\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ludwi\source\repos\SignalRApp\BlazorAppSignalR
+build_property.MSBuildProjectDirectory = C:\Users\lgde\source\repos\SignalR-example-app-2\BlazorAppSignalR
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/App.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/Components/Job.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/Components/Job.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xKb2IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/Components/JobsList.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/Components/JobsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xKb2JzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/Pages/Home.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/_Imports.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ludwi/source/repos/SignalRApp/BlazorAppSignalR/Layout/MainLayout.razor]
+[C:/Users/lgde/source/repos/SignalR-example-app-2/BlazorAppSignalR/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-bglnp3gvzn

@@ -10,13 +10,9 @@ namespace SignalRApp
         public async Task AddJob([FromServices] JobService jobService, int duration)
         {
             string id = Guid.NewGuid().ToString();
-            Console.WriteLine(duration);
             Job job = new(id, duration, JobStatus.Pending);
-            jobService.QueueJob(job);
-            Console.WriteLine(jobService.GetJobs().Count());
-            Console.WriteLine(job.ToString());
+            jobService.QueueJob(job);            
             await Clients.Caller.SendAsync("JobAdded", id);
-            Console.WriteLine("client invoked");
         }
 
         public async Task StartJob([FromServices] JobService jobService, string id)

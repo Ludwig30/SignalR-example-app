@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\BlazorAppSignalR\\BlazorAppSignalR.csproj": {}
+    "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\BlazorAppSignalR\\BlazorAppSignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\BlazorAppSignalR\\BlazorAppSignalR.csproj": {
+    "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\BlazorAppSignalR\\BlazorAppSignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\BlazorAppSignalR\\BlazorAppSignalR.csproj",
+        "projectUniqueName": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\BlazorAppSignalR\\BlazorAppSignalR.csproj",
         "projectName": "BlazorAppSignalR",
-        "projectPath": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\BlazorAppSignalR\\BlazorAppSignalR.csproj",
-        "packagesPath": "C:\\Users\\ludwi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\BlazorAppSignalR\\obj\\",
+        "projectPath": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\BlazorAppSignalR\\BlazorAppSignalR.csproj",
+        "packagesPath": "C:\\Users\\lgde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\BlazorAppSignalR\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ludwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\ClassLibraryJobs.csproj": {
-                "projectPath": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\ClassLibraryJobs.csproj"
+              "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\ClassLibraryJobs.csproj": {
+                "projectPath": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\ClassLibraryJobs.csproj"
               }
             }
           }
@@ -51,16 +56,16 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
@@ -69,13 +74,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -97,7 +102,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.3, 8.0.3]"
+              "version": "[8.0.4, 8.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -105,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -114,17 +119,21 @@
         }
       }
     },
-    "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\ClassLibraryJobs.csproj": {
+    "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\ClassLibraryJobs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\ClassLibraryJobs.csproj",
+        "projectUniqueName": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\ClassLibraryJobs.csproj",
         "projectName": "ClassLibraryJobs",
-        "projectPath": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\ClassLibraryJobs.csproj",
-        "packagesPath": "C:\\Users\\ludwi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ludwi\\source\\repos\\SignalRApp\\ClassLibraryJobs\\obj\\",
+        "projectPath": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\ClassLibraryJobs.csproj",
+        "packagesPath": "C:\\Users\\lgde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lgde\\source\\repos\\SignalR-example-app-2\\ClassLibraryJobs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ludwi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,6 +141,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

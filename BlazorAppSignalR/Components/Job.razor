@@ -7,15 +7,15 @@
         {
             case (@JobStatus.Pending):
                 <MudText>Job is pending</MudText>
-                <MudButton OnClick="RunJob" Variant="Variant.Outlined">Run job</MudButton>
+                <MudButton OnClick="RunJob" Disabled="Disconnected" Variant="Variant.Outlined">Run job</MudButton>
                 break;
             case (JobStatus.Running):
                 <MudText>Job in progress</MudText>
-                <MudButton OnClick="CancelJob" Variant="Variant.Outlined" Color="Color.Error">Cancel job</MudButton>
+                <MudButton OnClick="CancelJob" Disabled="Disconnected" Variant="Variant.Outlined" Color="Color.Error">Cancel job</MudButton>
                 break;
             case (JobStatus.Cancelled):
                 <MudText>Job is cancelled</MudText>
-                <MudButton OnClick="RunJob" Variant="Variant.Outlined">Run job</MudButton>
+                <MudButton OnClick="RunJob" Disabled="Disconnected" Variant="Variant.Outlined">Run job</MudButton>
                 break;
             case (JobStatus.Complete):
                 <MudText>Job complete</MudText>
@@ -29,17 +29,10 @@
     public string JobName { get; set; }
     [Parameter]
     public ClassLibraryJobs.Job JobProp { get; set; }
+    [Parameter]
+    public bool Disconnected { get; set; }
     [CascadingParameter]
-    public HubConnection Connection { get; set; }
-
-    /*protected override async Task OnParametersSetAsync()
-    {
-        Console.WriteLine(JobProp.ToString());
-        if (JobProp.GetStatus() == JobStatus.Pending)
-        {
-            await Connection.InvokeAsync("StartJob", JobProp.GetId());
-        }
-    }*/
+    public HubConnection Connection { get; set; } 
 
     private async Task RunJob()
     {

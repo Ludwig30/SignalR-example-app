@@ -4,20 +4,20 @@
 <CascadingValue Value="Connection">
     <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" style="display:flex;gap:1rem;padding:0;">
         <MudTextField  Label="Duration" @bind-Value="@_duration" />
-        <MudButton style="align-self: flex-end;" Variant="Variant.Outlined" OnClick="AddJob" Color="Color.Success">Add a job</MudButton>
+        <MudButton style="align-self: flex-end;" Variant="Variant.Outlined" OnClick="AddJob" Disabled="Disconnected" Color="Color.Success">Add a job</MudButton>
     </MudContainer>
-    <JobsList Jobs="_jobs" />
-    <MudButton OnClick="RunJobs" Variant="Variant.Outlined" Color="Color.Success">Run all jobs</MudButton>    
+    <JobsList Jobs="_jobs" Disconnected="Disconnected" />
+    <MudButton OnClick="RunJobs" Variant="Variant.Outlined" Disabled="Disconnected" Color="Color.Success">Run all jobs</MudButton>
 </CascadingValue>
 
 @code {
     public HubConnection Connection;
     private int _duration = 1000;
     private List<ClassLibraryJobs.Job> _jobs = new();
+    public bool Disconnected = false;
 
     protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine("connection");
         _jobs = JobsService.GetJobs();
         Connection = new HubConnectionBuilder()
                 .WithUrl("https://localhost:7034/Jobs")
@@ -26,26 +26,36 @@
 
         Connection.On<string>("JobStarted", id =>
         {
-            Console.WriteLine("Job started");
             JobsService.ModifyJob(id, JobStatus.Running);
             StateHasChanged();
         });
 
         Connection.On<string>("JobComplete", id =>
         {
-            Console.WriteLine("job complete");
             JobsService.ModifyJob(id, JobStatus.Complete);
             StateHasChanged();
         });
 
         Connection.On<string>("JobAdded", id =>
-        {
-            Console.WriteLine("in job added");
-            Console.WriteLine(id);
+        {            
             var job = new ClassLibraryJobs.Job(id, _duration, JobStatus.Pending);
             JobsService.AddJob(job);
             StateHasChanged();
         });
+
+        Connection.Closed += (error) =>
+        {
+            Disconnected = true;
+            StateHasChanged();
+            return Task.CompletedTask;
+        };
+        Connection.Reconnected += (connectionId) =>
+        {
+            
+            Disconnected = false;
+            StateHasChanged();
+            return Task.CompletedTask;
+        };
 
         await Connection.StartAsync();
     }
